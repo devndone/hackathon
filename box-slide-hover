@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<style> 
+
+			.divin {
+			    width: 100px;
+			    height: 100px;
+			    background: red;
+			    -webkit-transition: width 2s;
+			    transition: width 2s;
+			}
+
+			.divin:hover {
+			    background: blue;
+			}
+
+		</style>
+
+		<script language="javascript" type="text/javascript">
+
+			function expand() {
+			    document.getElementById('divin').setAttribute("style","background:red;width:100%");
+			}
+
+		</script>
+
+	</head>
+
+	<body>
+
+		<div id="divin" class="divin" onclick="expand()"></div>
+
+		<p>
+			A red square that when clicked on slides across the screen, and If hovered on the color changes to blue.
+		</p>
+
+	</body>
+</html>
